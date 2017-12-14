@@ -11,5 +11,5 @@ spring:
           password:
           uri: https://github.com/weylanshi/spring-cloud-study.git
           search-paths: loc-config
-          force-pull: true
+          force-pull: false #强制更新
           basedir: /var/config
