@@ -1,0 +1,5 @@
+spring:
+  profiles:
+    active: master
+  application:
+    name: register-server
