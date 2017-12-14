@@ -21,6 +21,7 @@
 	<modules>
 		<module>spring-cloud-app</module>
 		<module>config-server</module>
+		<module>register-server</module>
 	</modules>
 
 	<properties>

@@ -1,1 +1,4 @@
+com\loc\study\springboot\app\config\CloudConfig.class
 com\loc\study\springboot\app\Application.class
+META-INF\spring-configuration-metadata.json
+com\loc\study\springboot\app\controller\CloudConfigController.class

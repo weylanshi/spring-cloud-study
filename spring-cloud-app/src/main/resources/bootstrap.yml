@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: loc-config
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: http://127.0.0.1:8888
+      fail-fast: true
+server:
+  port: 8881
+
+
+loc.cloud:
+  config:
+    param1: p1
+    param2: 1
+  controller:
+    param3: p3
+#配置文件动态更新
+management:
+  address: 127.0.0.1
+  security:
+    enabled: false

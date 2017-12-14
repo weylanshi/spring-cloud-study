@@ -6,7 +6,7 @@
 	<artifactId>config-server</artifactId>
 
 	<name>config-server</name>
-	<description>注册中心</description>
+	<description>配置中心</description>
 
 	<parent>
 		<groupId>com.loc.study</groupId>
