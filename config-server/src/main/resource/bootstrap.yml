@@ -1,0 +1,10 @@
+server:
+  address: 8888
+spring:
+  application:
+    name: loc-config
+  cloud:
+    config:
+      server:
+        git:
+          uri:
