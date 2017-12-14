@@ -1,0 +1,6 @@
+loc.cloud:
+  config:
+    param1: git-p1
+    param2: 1
+  controller:
+    param3: git-p3
