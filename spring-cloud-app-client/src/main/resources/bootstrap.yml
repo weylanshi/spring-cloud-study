@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: loc-config
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: http://127.0.0.1:8888
+      fail-fast: false
+server:
+  port: 8881
+
+
+loc.cloud:
+  config:
+    param1: p1
+    param2: 1
+  controller:
+    param3: p3
+#配置文件动态更新
+management:
+  address: 127.0.0.1
+  security:
+    enabled: false
+eureka:
+  client:
+    register-with-eureka: true #客户端定时发送心跳到eureka的集群，用来告诉集群我这个客户端是健康的
+    fetch-registry: true #客户端定时从服务端取注册中心的配置
+    serviceUrl:
+      defaultZone: http://127.0.0.1:1111/eureka,http://127.0.0.1:1112/eureka
+    registry-fetch-interval-seconds: 30 #每隔30秒从eureka集群获取最新的客户端列表
