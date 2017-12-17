@@ -3,9 +3,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<artifactId>spring-cloud-app</artifactId>
+	<artifactId>spring-cloud-app-client</artifactId>
 
-	<name>spring-cloud-app</name>
+	<name>spring-cloud-app-client</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>

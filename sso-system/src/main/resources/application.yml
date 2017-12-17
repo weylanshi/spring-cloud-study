@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: loc-config
+  profiles:
+    active: dev
+  thymeleaf: #视图相关
+    prefix: classpath:templates/
+    suffix: .html
+    mode: HTML5
+    encoding: UTF-8
+    content-type: text/html
+    cache: false
+  freemarker:
+    cache: false
+    request-context-attribute: request
+  devtools:
+    restart:
+      enabled: true #热部署生效
+#eureka:
+#  client:
+#    register-with-eureka: true #客户端定时发送心跳到eureka的集群，用来告诉集群我这个客户端是健康的
+#    fetch-registry: true #客户端定时从服务端取注册中心的配置
+#    serviceUrl:
+#      defaultZone: http://127.0.0.1:1111/eureka
+#    registry-fetch-interval-seconds: 30 #每隔30秒从eureka集群获取最新的客户端列表
+mybatis: ##指向mapper的xml文件位置
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.taotao.pojo
+
+
+

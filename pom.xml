@@ -20,8 +20,10 @@
 
 	<modules>
 		<module>spring-cloud-app</module>
+		<module>spring-cloud-app-client</module>
 		<module>config-server</module>
 		<module>register-server</module>
+		<module>sso-system</module>
 	</modules>
 
 	<properties>
@@ -30,6 +32,8 @@
 		<java.version>1.8</java.version>
 		<spring.boot.version>1.5.9.RELEASE</spring.boot.version>
 		<spring.cloud.version>Dalston.SR4</spring.cloud.version>
+		<mybaits.version>1.2.0</mybaits.version>
+		<mysql.connector.version>5.1.30</mysql.connector.version>
 	</properties>
 
 	<dependencyManagement>
@@ -48,6 +52,22 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
+			<!--mybaites-->
+			<dependency>
+				<groupId>org.mybatis.spring.boot</groupId>
+				<artifactId>mybatis-spring-boot-starter</artifactId>
+				<version>${mybaits.version}</version>
+			</dependency>
+			<!--mysql-->
+			<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+			<dependency>
+				<groupId>mysql</groupId>
+				<artifactId>mysql-connector-java</artifactId>
+				<version>${mysql.connector.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
 
 		</dependencies>
 	</dependencyManagement>
@@ -75,6 +95,13 @@
 							</goals>
 						</execution>
 					</executions>
+					<dependencies>
+						<dependency>
+							<groupId>org.springframework</groupId>
+							<artifactId>springloaded</artifactId>
+							<version>1.2.5.RELEASE</version>
+						</dependency>
+					</dependencies>
 				</plugin>
 			</plugins>
 		</pluginManagement>
