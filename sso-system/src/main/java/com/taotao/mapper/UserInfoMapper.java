@@ -4,6 +4,7 @@ import com.taotao.pojo.UserInfo;
 import com.taotao.pojo.UserInfoExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Select;
 
 public interface UserInfoMapper {
     int countByExample(UserInfoExample example);
@@ -27,4 +28,9 @@ public interface UserInfoMapper {
     int updateByPrimaryKeySelective(UserInfo record);
 
     int updateByPrimaryKey(UserInfo record);
+
+    List<UserInfo> selectAll();
+
+    @Select(" SELECT * FROM  user_info ")
+    List<UserInfo> selectAll2();
 }

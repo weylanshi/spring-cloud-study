@@ -23,9 +23,9 @@ spring:
 #    serviceUrl:
 #      defaultZone: http://127.0.0.1:1111/eureka
 #    registry-fetch-interval-seconds: 30 #每隔30秒从eureka集群获取最新的客户端列表
-mybatis: ##指向mapper的xml文件位置
-  mapper-locations: classpath:mapper/*.xml
-  type-aliases-package: com.taotao.pojo
+#mybatis: ##指向mapper的xml文件位置
+#  mapper-locations: classpath:mapper/*.xml
+#  type-aliases-package: com.taotao.pojo
 
 
 
