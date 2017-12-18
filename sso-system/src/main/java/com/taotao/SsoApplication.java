@@ -26,7 +26,7 @@ public class SsoApplication {
 
     @RequestMapping("/")
     public String hello(Model model){
-        String a = "111 ";
+        String a = "123123";
         model.addAttribute("hello",a);
         return "hello";
     }
